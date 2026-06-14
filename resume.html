@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume Lab | Career Launch Academy</title>
+<meta name="description" content="The ATS truth, a length-decision tool, section-by-section teaching, a 10-persona example library (poor / average / excellent), and a client-side resume scorer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .stub-hero { background:linear-gradient(180deg,#fff,var(--canvas)); color:var(--ink); padding-block: clamp(3rem,7vw,5rem); }
+  .stub-hero h1 { font-size: var(--fs-h1); color:var(--ink); max-width:20ch; }
+  .stub-hero .lede { color:var(--ink-muted); }
+  .stub-badge { display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.3rem .8rem; border-radius:100px; margin-bottom:1rem; background:#EAF1FA; color:var(--primary-dark); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <nav class="nav__links" id="navlinks" aria-label="Primary">
+      <a href="profile.html">Profile &amp; Presence</a>
+      <a href="resume.html" aria-current="page">Resume Lab</a>
+      <a href="interview.html">Interview Center</a>
+      <a href="strategy.html">Job Search Strategy</a>
+      <a href="truth.html">Recruiter Truth</a>
+      <a class="nav__cta" href="start.html">Start Here</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="stub-hero">
+    <div class="wrap" data-reveal>
+      <span class="stub-badge">In progress — content drafted, building next</span>
+      <span class="eyebrow">Resume Lab</span>
+      <h1>See weak vs. excellent — then score your own.</h1>
+      <p class="lede">The ATS truth, a length-decision tool, section-by-section teaching, a 10-persona example library (poor / average / excellent), and a client-side resume scorer.</p>
+      <div class="pill-row" style="margin-top:1.6rem">
+        <a class="btn btn--primary btn--lg" href="start.html">Build my roadmap →</a>
+        <a class="btn btn--ghost btn--lg" href="truth.html">Read Recruiter Truth</a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap" style="max-width:760px" data-reveal>
+      <div class="note">This hub's full content is written and ready — it's next in the build queue. The complete platform leads with the three credibility-defining pages (Home, Start Here, and Recruiter Truth), then layers in this hub. Use the roadmap builder to get your ordered plan in the meantime.</div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:.8rem"><span class="brand__mark">CL</span>Career Launch Academy</a>
+        <p class="footer__mission">Free and always will be. We don't sell templates, coaching, or your data — so the advice has no reason to lie to you.</p>
+      </div>
+      <div>
+        <h4>Hubs</h4>
+        <a href="start.html">Start Here</a>
+        <a href="profile.html">Profile &amp; Presence</a>
+        <a href="resume.html">Resume Lab</a>
+        <a href="interview.html">Interview Center</a>
+        <a href="strategy.html">Job Search Strategy</a>
+        <a href="truth.html">Recruiter Truth</a>
+      </div>
+      <div>
+        <h4>Sources</h4>
+        <div data-sources></div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span data-year></span> Career Launch Academy. Independent &amp; non-commercial.</span>
+      <span>Content last reviewed: <span data-reviewed></span></span>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

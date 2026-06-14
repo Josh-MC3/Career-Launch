@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start Here — Build Your Career Roadmap | Career Launch Academy</title>
+<meta name="description" content="Answer a few questions and get a personalized, ordered career roadmap. We diagnose your real bottleneck, then route you to the right resources. Free, no account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .start-hero { background: linear-gradient(180deg,#fff,var(--canvas)); padding-block: clamp(2.5rem,5vw,3.5rem) 1rem; }
+  .start-hero h1 { font-size: var(--fs-h1); }
+  #diagnostic { max-width: 760px; margin: 0 auto; }
+  .d-head { margin-bottom: 1.5rem; }
+  .d-head h2 { font-size: clamp(1.4rem,3vw,2rem); }
+  .d-foot { margin-top: 1.5rem; }
+
+  /* progress bar */
+  .progress { height: 8px; background: var(--border); border-radius: 100px; overflow: hidden; margin: .5rem 0 1.2rem; }
+  .progress__bar { height: 100%; background: var(--primary); border-radius: 100px; transition: width .4s ease; }
+
+  /* stage cards */
+  .stage-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  @media (max-width:640px){ .stage-grid { grid-template-columns:1fr; } }
+  .stage-card {
+    text-align: left; background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.25rem; cursor: pointer; transition: border-color .15s, box-shadow .15s, transform .12s;
+    display: flex; flex-direction: column; gap: .3rem; font-family: inherit;
+  }
+  .stage-card:hover { border-color: var(--primary); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .stage-card__title { font-weight: 700; font-size: 1.1rem; color: var(--ink); }
+  .stage-card__blurb { color: var(--ink-muted); font-size: .95rem; }
+
+  /* option buttons */
+  .opt-grid { display: grid; gap: .7rem; }
+  .opt {
+    text-align: left; background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1rem 1.2rem; cursor: pointer; font-size: 1.05rem; font-weight: 500; color: var(--ink);
+    transition: border-color .15s, background .15s, transform .12s; font-family: inherit;
+  }
+  .opt:hover { border-color: var(--primary); background: #F7FAFE; transform: translateX(3px); }
+
+  /* roadmap */
+  .rm-progress { display:flex; align-items:center; gap:1rem; margin-top:1rem; }
+  .rm-progress .progress { flex:1; margin:0; }
+  .rm-progress__label { font-size:.85rem; font-weight:600; color:var(--ink-muted); white-space:nowrap; }
+  .roadmap { list-style:none; counter-reset:rm; padding:0; margin:1.5rem 0 0; }
+  .rm-step {
+    display:flex; gap:1rem; align-items:flex-start; background:#fff; border:1px solid var(--border);
+    border-radius:var(--radius); padding:1.25rem; margin-bottom:1rem; position:relative; transition:border-color .15s, opacity .2s;
+  }
+  .rm-step--here { background:#F7FAFE; border-color:#bcd6f2; }
+  .rm-step.is-done { opacity:.62; }
+  .rm-step.is-done h3 { text-decoration:line-through; }
+  .rm-step__num { flex:0 0 auto; width:38px; height:38px; border-radius:50%; background:var(--primary); color:#fff; font-weight:800; display:grid; place-items:center; }
+  .rm-step--here .rm-step__num { background:var(--success); }
+  .rm-step__body { flex:1; }
+  .rm-step__body h3 { font-size:1.12rem; margin-bottom:.25rem; }
+  .rm-step__body p { font-size:.96rem; color:var(--ink-muted); margin:0 0 .6rem; }
+  .rm-step__link { font-weight:600; font-size:.95rem; }
+  .rm-step__badge { display:inline-block; font-size:.8rem; font-weight:700; color:var(--success); background:var(--success-bg); padding:.2rem .6rem; border-radius:100px; }
+  .rm-check { flex:0 0 auto; display:flex; flex-direction:column; align-items:center; gap:.25rem; font-size:.72rem; font-weight:600; color:var(--ink-muted); cursor:pointer; user-select:none; }
+  .rm-check input { width:22px; height:22px; accent-color:var(--success); cursor:pointer; }
+  @media (max-width:560px){
+    .rm-step { flex-wrap:wrap; }
+    .rm-check { flex-direction:row; gap:.4rem; margin-top:.5rem; width:100%; justify-content:flex-end; }
+  }
+
+  .saved-note { display:inline-flex; align-items:center; gap:.4rem; font-size:.85rem; color:var(--ink-muted); margin-top:1.5rem; }
+  .saved-note::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--success); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <nav class="nav__links" id="navlinks" aria-label="Primary">
+      <a href="profile.html">Profile &amp; Presence</a>
+      <a href="resume.html">Resume Lab</a>
+      <a href="interview.html">Interview Center</a>
+      <a href="strategy.html">Job Search Strategy</a>
+      <a href="truth.html">Recruiter Truth</a>
+      <a class="nav__cta" href="start.html" aria-current="page">Start Here</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="start-hero">
+    <div class="wrap text-center">
+      <span class="eyebrow">Start Here</span>
+      <h1>Your path, not a pile of articles.</h1>
+      <p class="lede mx-auto">Most career sites hand you 50 links and wish you luck. Answer a few questions and we'll diagnose what's actually stopping you — then build an ordered plan. Nothing is saved to any server; your progress lives in this browser.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div id="diagnostic" aria-live="polite">
+        <!-- diagnostic.js renders here; fallback below for no-JS -->
+        <noscript>
+          <div class="card card--pad-lg">
+            <h2>This tool needs JavaScript</h2>
+            <p class="muted">The roadmap builder runs entirely in your browser. With JavaScript off, you can still jump straight into any hub:</p>
+            <div class="pill-row" style="margin-top:1rem">
+              <a class="btn btn--ghost" href="truth.html">Recruiter Truth</a>
+              <a class="btn btn--ghost" href="profile.html">Profile &amp; Presence</a>
+              <a class="btn btn--ghost" href="resume.html">Resume Lab</a>
+              <a class="btn btn--ghost" href="interview.html">Interview Center</a>
+              <a class="btn btn--ghost" href="strategy.html">Job Search Strategy</a>
+            </div>
+          </div>
+        </noscript>
+      </div>
+      <div class="text-center"><span class="saved-note">Your progress is saved automatically in this browser</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:.8rem"><span class="brand__mark">CL</span>Career Launch Academy</a>
+        <p class="footer__mission">Free and always will be. We don't sell templates, coaching, or your data — so the advice has no reason to lie to you.</p>
+      </div>
+      <div>
+        <h4>Hubs</h4>
+        <a href="start.html">Start Here</a>
+        <a href="profile.html">Profile &amp; Presence</a>
+        <a href="resume.html">Resume Lab</a>
+        <a href="interview.html">Interview Center</a>
+        <a href="strategy.html">Job Search Strategy</a>
+        <a href="truth.html">Recruiter Truth</a>
+      </div>
+      <div>
+        <h4>Sources</h4>
+        <div data-sources></div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span data-year></span> Career Launch Academy. Independent &amp; non-commercial.</span>
+      <span>Content last reviewed: <span data-reviewed></span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="diagnostic.js"></script>
+</body>
+</html>

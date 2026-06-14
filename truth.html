@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recruiter Truth — How Hiring Actually Works | Career Launch Academy</title>
+<meta name="description" content="The honest, sourced version of how hiring works. The 6-second scan and the 75% ATS auto-rejection myths, examined against real research — plus what actually moves the needle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero { background: linear-gradient(180deg,#fff,var(--canvas)); padding-block: clamp(2.5rem,5vw,4rem) clamp(1.5rem,3vw,2.5rem); }
+  .page-hero h1 { font-size: var(--fs-h1); max-width: 18ch; }
+  .toc { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.5rem; }
+  .toc a { font-size:.9rem; font-weight:600; color:var(--primary); background:#fff; border:1px solid var(--border); padding:.45rem .9rem; border-radius:100px; }
+  .toc a:hover { border-color:var(--primary); text-decoration:none; }
+  .matters-list { list-style:none; padding:0; margin:1rem 0 0; }
+  .matters-list li { display:flex; gap:.8rem; padding:1rem 0; border-bottom:1px solid var(--border); }
+  .matters-list li:last-child { border-bottom:none; }
+  .matters-list .tick { flex:0 0 auto; width:26px; height:26px; border-radius:50%; background:var(--success-bg); color:var(--success); display:grid; place-items:center; font-weight:700; margin-top:2px; }
+  .mistakes { display:grid; grid-template-columns:repeat(2,1fr); gap:1.25rem; }
+  @media (max-width:760px){ .mistakes { grid-template-columns:1fr; } }
+  .mistake-card h3 { display:flex; align-items:center; gap:.5rem; font-size:1.1rem; }
+  .mistake-card ul { margin:.5rem 0 0; padding-left:1.1rem; }
+  .mistake-card li { margin-bottom:.5rem; font-size:.96rem; }
+  .mistake-card li b { color:var(--ink); }
+  .script-box { background:var(--canvas); border-left:4px solid var(--primary); border-radius:0 var(--radius-sm) var(--radius-sm) 0; padding:1rem 1.2rem; margin:.8rem 0; font-style:italic; color:var(--ink); }
+  .section-rule { border:none; border-top:1px solid var(--border); margin:0; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <nav class="nav__links" id="navlinks" aria-label="Primary">
+      <a href="profile.html">Profile &amp; Presence</a>
+      <a href="resume.html">Resume Lab</a>
+      <a href="interview.html">Interview Center</a>
+      <a href="strategy.html">Job Search Strategy</a>
+      <a href="truth.html" aria-current="page">Recruiter Truth</a>
+      <a class="nav__cta" href="start.html">Start Here</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap" data-reveal>
+      <span class="eyebrow eyebrow--scarlet">Recruiter Truth</span>
+      <h1>The honest version of how hiring works.</h1>
+      <p class="lede">Most career advice online sells you fear. We'd rather show you the research — named, dated, and clickable. Here's what's actually true.</p>
+      <nav class="toc" aria-label="On this page">
+        <a href="#scan">The 6-second scan</a>
+        <a href="#ats">The 75% ATS myth</a>
+        <a href="#beat-ats">"Beat the ATS"</a>
+        <a href="#works">What actually works</a>
+        <a href="#mistakes">Mistake libraries</a>
+        <a href="#salary">Salary negotiation</a>
+        <a href="#ai">AI tools</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- MYTH 1 -->
+  <section class="section section--tight" id="scan">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Myth 1</span>
+        <div class="myth">
+          <div class="myth__claim">
+            <span class="myth__x">✕</span>
+            <strong>"Recruiters spend just 6 seconds on your resume."</strong>
+          </div>
+          <div class="myth__body">
+            <p>The famous number comes from a 2012 eye-tracking study by Ladders of just <strong>30 recruiters</strong>; an updated 2018 version revised it to 7.4 seconds. The methodology was thin — small sample, undisclosed details — and later research tells a different story.</p>
+            <p>An independent study by Jan Tegze tracked 114 recruiters reviewing real CVs and found average time ranged from <strong>17 to 46 seconds</strong> depending on length and relevance. ResumeGo's 2024 survey found 47% of hiring professionals spend 30 seconds to a minute, and only 1% spend less than 10 seconds.
+              <a class="chip" href="https://standout-cv.com/stats/how-long-recruiters-spend-looking-at-cv" target="_blank" rel="noopener">Tegze · ResumeGo 2024</a>
+            </p>
+            <div class="myth__truth">
+              <strong>What's actually true:</strong> You get a fast first pass, then more time if you survive it. Aim to win the first 6–8 seconds — then structure the rest to earn the longer read. Recruiters aren't universally impatient; they're contextually efficient.
+              <a class="chip chip--data" href="https://www.interviewpal.com/blog/how-long-recruiters-actually-spend-reading-your-resume-data-study" target="_blank" rel="noopener">InterviewPal data study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- MYTH 2 -->
+  <section class="section section--tight" id="ats">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Myth 2 — the big one</span>
+        <div class="myth">
+          <div class="myth__claim">
+            <span class="myth__x">✕</span>
+            <strong>"75% of resumes are auto-rejected by an ATS before a human sees them."</strong>
+          </div>
+          <div class="myth__body">
+            <p>This claim is everywhere — and it's essentially false. It traces back to a <strong>2012 sales pitch by a company called Preptel</strong>, which was selling resume-optimization services. The company went out of business in 2013, and no methodology was ever published.
+              <a class="chip" href="https://blog.theinterviewguys.com/ats-resume-rejection-myth/" target="_blank" rel="noopener">The Interview Guys investigation</a>
+            </p>
+            <p>When researchers actually asked recruiters, the picture flipped: <strong>92% said their systems do not automatically reject</strong> resumes based on formatting, design, missing keywords, or low AI match scores. Auto-rejection was used by only 8%, solely for roles with highly specific requirements.
+              <a class="chip" href="https://itbrief.co.uk/story/study-reveals-ats-rarely-auto-rejects-cvs-debunks-75-myth" target="_blank" rel="noopener">Enhancv, 2025 — 25 recruiters</a>
+            </p>
+            <div class="myth__truth">
+              <strong>What's actually true:</strong> ATS tools organize applications; they don't eliminate them. Human recruiters, overwhelmed by volume, make the final decisions. The real enemy is <strong>application volume and weak relevance</strong> — not a robot deleting your file.
+              <a class="chip chip--data" href="https://hr-gazette.com/debunking-the-ats-rejection-myth/" target="_blank" rel="noopener">HR Gazette / Enhancv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <!-- MYTH 3 -->
+  <section class="section section--tight" id="beat-ats">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Myth 3</span>
+        <div class="myth">
+          <div class="myth__claim">
+            <span class="myth__x">✕</span>
+            <strong>"Beat the ATS and you've got the interview."</strong>
+          </div>
+          <div class="myth__body">
+            <p>No. An ATS-friendly resume only gets you <em>in front of a recruiter</em> — humans still make the final call. And modern systems use context-based parsing, not raw keyword counts, so keyword stuffing reads as spammy rather than smart.
+              <a class="chip" href="https://www.intelligentcv.app/career/ats-resume-rejection-brutal-truth-hack/" target="_blank" rel="noopener">Context-parsing note</a>
+            </p>
+            <div class="myth__truth">
+              <strong>What's actually true:</strong> Clean formatting clears the low bar of being readable. Everything past that is a human judging relevance and impact. Spend your effort there.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WORKS -->
+  <section class="section" id="works" style="background:var(--canvas)">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">The part worth your energy</span>
+        <h2>So what actually moves the needle?</h2>
+        <p class="lede">If the robots aren't the gatekeeper, where should your effort go? Here's what the same research points to.</p>
+        <ul class="matters-list">
+          <li><span class="tick">✓</span><div><b>A clean, skimmable layout.</b> Resumes that captured recruiter attention had simple layouts with clear sections and headings; bold titles and bulleted accomplishments performed well, while clutter, multiple columns, and long sentences hurt. <a class="chip chip--data" href="https://www.hrdive.com/news/eye-tracking-study-shows-recruiters-look-at-resumes-for-7-seconds/541582/" target="_blank" rel="noopener">Ladders eye-tracking</a></div></li>
+          <li><span class="tick">✓</span><div><b>Relevance over volume.</b> Tailoring to the role beats blasting 200 generic applications. The volume problem is real — don't add to it with applications that don't fit.</div></li>
+          <li><span class="tick">✓</span><div><b>Referrals and internal networking.</b> A human advocate inside the company sidesteps the volume problem entirely — employee referrals can bypass strict filters. <a class="chip chip--data" href="https://www.davron.net/ats-systems-explained-75-percent-resumes-rejected/" target="_blank" rel="noopener">Davron</a></div></li>
+          <li><span class="tick">✓</span><div><b>Putting the right info where eyes land.</b> Most of the initial review goes to your name, current and previous titles, dates, and education — so make those unmistakable. <a class="chip chip--data" href="https://www.bu.edu/com/files/2018/10/TheLadders-EyeTracking-StudyC2.pdf" target="_blank" rel="noopener">Boston University / Ladders</a></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISTAKE LIBRARIES -->
+  <section class="section" id="mistakes">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">What loses you the callback</span>
+        <h2>The mistakes that actually cost people.</h2>
+        <p class="lede">Not exotic ATS tricks — the high-frequency, fixable errors recruiters see every day.</p>
+      </div>
+      <div class="mistakes" style="margin-top:1.75rem">
+        <div class="card mistake-card" data-reveal>
+          <h3>📄 Resume mistakes</h3>
+          <ul>
+            <li><b>Listing duties, not accomplishments.</b> "Responsible for X" tells nobody what you achieved.</li>
+            <li><b>No numbers.</b> Impact without quantification reads as a claim, not a result.</li>
+            <li><b>Burying relevance.</b> The most relevant experience hidden on page two.</li>
+            <li><b>Clutter.</b> Multiple columns, tiny margins, no white space — the eye gives up.</li>
+          </ul>
+        </div>
+        <div class="card mistake-card" data-reveal>
+          <h3>🔗 LinkedIn mistakes</h3>
+          <ul>
+            <li><b>A headline that's just a job title.</b> The most-seen line on your profile, wasted.</li>
+            <li><b>No photo, or a bad one.</b> Reads as incomplete or abandoned.</li>
+            <li><b>An empty "About."</b> Prime keyword and story space left blank.</li>
+            <li><b>Going dormant.</b> Inactive profiles surface less and signal you've checked out.</li>
+          </ul>
+        </div>
+        <div class="card mistake-card" data-reveal>
+          <h3>🎤 Interview mistakes</h3>
+          <ul>
+            <li><b>Rambling with no structure.</b> Behavioral answers that never reach a result.</li>
+            <li><b>No specifics.</b> "I'm a hard worker" instead of a story that proves it.</li>
+            <li><b>Trashing a past employer.</b> A red flag every time, however justified.</li>
+            <li><b>No questions for them.</b> Reads as low interest or low preparation.</li>
+          </ul>
+        </div>
+        <div class="card mistake-card" data-reveal>
+          <h3>🤝 Networking mistakes</h3>
+          <ul>
+            <li><b>Leading with the ask.</b> "Can you get me a job" before any relationship exists.</li>
+            <li><b>Only reaching out when you need something.</b> No deposits, all withdrawals.</li>
+            <li><b>Never following up.</b> A good conversation that goes nowhere.</li>
+            <li><b>Skipping it entirely.</b> The highest-leverage activity, most avoided.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALARY -->
+  <section class="section" id="salary" style="background:var(--canvas)">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Don't leave money on the table</span>
+        <h2>Salary negotiation, without the dread.</h2>
+        <p>The number you accept today compounds across every raise for years. Most people skip negotiating out of fear — here's the framing that works.</p>
+        <h3 style="margin-top:1.5rem">The opening move</h3>
+        <div class="script-box">"I'm really excited about the role and the team. Before we finalize, I'd like to talk about the compensation — based on my experience and the market for this role, I was expecting something closer to [number]. Is there flexibility there?"</div>
+        <h3 style="margin-top:1.5rem">The principles</h3>
+        <ul class="matters-list">
+          <li><span class="tick">✓</span><div><b>Let them name a number first when you can.</b> "What's the range budgeted for this role?" beats anchoring yourself low.</div></li>
+          <li><span class="tick">✓</span><div><b>Anchor with a researched figure.</b> Use real market data (Levels.fyi, Glassdoor) so your number has a basis.</div></li>
+          <li><span class="tick">✓</span><div><b>Negotiate the whole package.</b> Base, bonus, equity, start date, PTO, remote flexibility — not just salary.</div></li>
+        </ul>
+        <h3 style="margin-top:1.5rem">The mistakes</h3>
+        <ul class="matters-list">
+          <li><span class="tick" style="background:var(--warning-bg);color:var(--warning)">✕</span><div><b>Accepting on the call.</b> "Thank you — can I have until tomorrow to review?" is always acceptable.</div></li>
+          <li><span class="tick" style="background:var(--warning-bg);color:var(--warning)">✕</span><div><b>Negotiating against yourself.</b> Naming a number, then lowering it before they respond.</div></li>
+          <li><span class="tick" style="background:var(--warning-bg);color:var(--warning)">✕</span><div><b>Apologizing for asking.</b> Negotiation is expected. It's not rude; it's normal.</div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI TOOLS -->
+  <section class="section" id="ai">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Used well, not blindly</span>
+        <h2>AI tools for job seekers.</h2>
+        <p>ChatGPT and Claude are genuinely useful for tailoring and interview reps — but there's a clear line between help and harm.</p>
+        <div class="contrast">
+          <div class="contrast__col contrast__col--strong">
+            <span class="contrast__label">✓ Works</span>
+            <p><b>Editing your own writing.</b> Paste your real experience and ask AI to tighten it, quantify it, or match it to a job description.</p>
+            <p><b>Interview practice.</b> Have it play interviewer, then critique your STAR answers.</p>
+            <p><b>Research.</b> Summarize a company, surface likely questions, draft outreach you then make your own.</p>
+          </div>
+          <div class="contrast__col contrast__col--weak">
+            <span class="contrast__label">✕ Backfires</span>
+            <p><b>Generating a resume from scratch.</b> Fully AI-written applications read as generic and risk fabricating details you can't defend.</p>
+            <p><b>Mass-applying on autopilot.</b> Adds to exactly the volume problem that's clogging the funnel.</p>
+          </div>
+        </div>
+        <p class="note">The research is consistent: AI helps most when it edits human-written prose, not when it generates the entire résumé. <a class="chip chip--data" href="https://jobcannon.io/blog/ai-resume-statistics-2026" target="_blank" rel="noopener">JobCannon, 2026</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--ink); color:#fff">
+    <div class="wrap text-center" data-reveal>
+      <h2 style="color:#fff">Now put it to work.</h2>
+      <p class="lede mx-auto" style="color:#c5ccd2">You know what's real. Start Here turns it into an ordered plan for your situation.</p>
+      <a class="btn btn--scarlet btn--lg" href="start.html" style="margin-top:1rem">Build my roadmap →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:.8rem"><span class="brand__mark">CL</span>Career Launch Academy</a>
+        <p class="footer__mission">Free and always will be. We don't sell templates, coaching, or your data — so the advice has no reason to lie to you.</p>
+      </div>
+      <div>
+        <h4>Hubs</h4>
+        <a href="start.html">Start Here</a>
+        <a href="profile.html">Profile &amp; Presence</a>
+        <a href="resume.html">Resume Lab</a>
+        <a href="interview.html">Interview Center</a>
+        <a href="strategy.html">Job Search Strategy</a>
+        <a href="truth.html">Recruiter Truth</a>
+      </div>
+      <div>
+        <h4>Sources on this page</h4>
+        <div data-sources></div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span data-year></span> Career Launch Academy. Independent &amp; non-commercial.</span>
+      <span>Content last reviewed: <span data-reviewed></span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

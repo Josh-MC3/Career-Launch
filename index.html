@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Career Launch Academy — The Complete Career Preparation System</title>
+<meta name="description" content="Evidence-based, completely free career preparation. What recruiters actually do — backed by research, with sources you can check. No sales pitch, no premium tier.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ---- Home-specific ---- */
+  .hero { background: linear-gradient(180deg, #fff 0%, var(--canvas) 100%); padding-block: clamp(3rem,7vw,6rem) clamp(2.5rem,5vw,4rem); }
+  .hero__inner { max-width: 880px; }
+  .hero h1 { font-size: var(--fs-hero); font-weight: 800; margin-bottom: .4em; }
+  .hero h1 .accent { color: var(--primary); }
+  .hero__sub { font-size: 1.3rem; font-weight: 600; color: var(--ink); margin-bottom: .8em; }
+  .hero__body { font-size: 1.12rem; color: var(--ink-muted); max-width: 62ch; margin-bottom: 1.6em; }
+  .hero__cta { display: flex; gap: .8rem; flex-wrap: wrap; }
+  .hero__free { display:inline-flex; align-items:center; gap:.4rem; margin-top:1.4rem; font-size:.9rem; font-weight:600; color:var(--success); }
+  .hero__free::before { content:""; width:8px; height:8px; border-radius:50%; background:var(--success); }
+
+  /* truth strip */
+  .truth-strip { background: var(--ink); color: #fff; }
+  .truth-strip .eyebrow { color: #ff7a6b; }
+  .truth-strip__head { max-width: 60ch; }
+  .truth-strip h2 { color: #fff; }
+  .truth-strip p.lede { color: #c5ccd2; }
+  .myth-mini-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2rem; }
+  @media (max-width: 860px){ .myth-mini-grid { grid-template-columns: 1fr; } }
+  .myth-mini {
+    background: #25292e; border: 1px solid #363b42; border-radius: var(--radius); padding: 1.4rem;
+    transition: border-color .18s, transform .18s; color:#fff;
+  }
+  .myth-mini:hover { border-color: var(--scarlet); transform: translateY(-3px); text-decoration:none; }
+  .myth-mini__q { font-weight: 700; font-size: 1.08rem; color:#fff; margin-bottom:.5rem; display:block; }
+  .myth-mini__verdict { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--scarlet); background:rgba(215,38,56,.14); padding:.15rem .5rem; border-radius:100px; margin-bottom:.7rem; }
+  .myth-mini p { color:#aeb6bd; font-size:.95rem; margin:0; }
+  .myth-mini__link { color:#ff7a6b; font-weight:600; font-size:.88rem; margin-top:.8rem; display:inline-block; }
+
+  /* roadmap preview */
+  .stepper { display:flex; gap:0; counter-reset: step; margin-top:2rem; flex-wrap:wrap; }
+  .step { flex:1 1 160px; position:relative; padding:0 .5rem; text-align:center; }
+  .step__num {
+    counter-increment: step; width:46px; height:46px; border-radius:50%; margin:0 auto .8rem;
+    background:#fff; border:2px solid var(--primary); color:var(--primary); font-weight:800;
+    display:grid; place-items:center; position:relative; z-index:2;
+  }
+  .step__num::before { content: counter(step); }
+  .step:not(:last-child)::after {
+    content:""; position:absolute; top:23px; left:50%; width:100%; height:2px; background:var(--border); z-index:1;
+  }
+  .step h4 { font-size:1rem; margin-bottom:.2rem; }
+  .step p { font-size:.88rem; color:var(--ink-muted); margin:0; }
+  @media (max-width:760px){
+    .stepper { flex-direction:column; gap:1.2rem; }
+    .step { display:flex; align-items:flex-start; gap:1rem; text-align:left; padding:0; }
+    .step__num { margin:0; flex:0 0 auto; }
+    .step:not(:last-child)::after { display:none; }
+  }
+
+  /* evidence band */
+  .evidence { background: var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+  .evidence__grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1.5rem; }
+  @media (max-width:860px){ .evidence__grid { grid-template-columns:1fr; } }
+  .evi { padding:1.3rem 0; }
+  .evi h3 { font-size:1.05rem; color:var(--primary-dark); }
+  .evi p { font-size:.96rem; color:var(--ink-muted); margin-bottom:.7rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <nav class="nav__links" id="navlinks" aria-label="Primary">
+      <a href="profile.html">Profile &amp; Presence</a>
+      <a href="resume.html">Resume Lab</a>
+      <a href="interview.html">Interview Center</a>
+      <a href="strategy.html">Job Search Strategy</a>
+      <a href="truth.html">Recruiter Truth</a>
+      <a class="nav__cta" href="start.html">Start Here</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__inner" data-reveal>
+      <h1>The Complete <span class="accent">Career Preparation</span> System</h1>
+      <p class="hero__sub">Everything recruiters wish candidates knew before applying.</p>
+      <p class="hero__body">Most career advice online is fear dressed up as expertise. We took a different approach: we read the actual studies, we tell you straight what they say, and we built the whole thing to be free. No premium tier. No template upsell. No "unlock." Just what works.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="start.html">Start your roadmap →</a>
+        <a class="btn btn--ghost btn--lg" href="truth.html">See what recruiters actually do</a>
+      </div>
+      <span class="hero__free">Completely free — and always will be</span>
+    </div>
+  </section>
+
+  <!-- TRUTH STRIP -->
+  <section class="section truth-strip">
+    <div class="wrap">
+      <div class="truth-strip__head" data-reveal>
+        <span class="eyebrow">Start with the truth</span>
+        <h2>Three things you've been told that aren't quite true.</h2>
+        <p class="lede">Most career sites repeat these to scare you into buying something. Here's what the research actually shows.</p>
+      </div>
+      <div class="myth-mini-grid">
+        <a class="myth-mini" href="truth.html#scan" data-reveal>
+          <span class="myth-mini__q">"6 seconds to read your resume?"</span>
+          <span class="myth-mini__verdict">Mostly a myth</span>
+          <p>It comes from a 30-person study with thin methodology. Real review time runs closer to 30 seconds — and longer if you pass the first glance.</p>
+          <span class="myth-mini__link">See the research →</span>
+        </a>
+        <a class="myth-mini" href="truth.html#ats" data-reveal>
+          <span class="myth-mini__q">"75% auto-rejected by robots?"</span>
+          <span class="myth-mini__verdict">Debunked</span>
+          <p>The number traces to a 2012 sales pitch from a company that went out of business. 92% of recruiters say their systems don't auto-reject at all.</p>
+          <span class="myth-mini__link">See the research →</span>
+        </a>
+        <a class="myth-mini" href="truth.html#beat-ats" data-reveal>
+          <span class="myth-mini__q">"Beat the ATS and you're in."</span>
+          <span class="myth-mini__verdict">Not how it works</span>
+          <p>An ATS-friendly resume only gets you in front of a human. People still make the final call — and the real enemy is volume, not software.</p>
+          <span class="myth-mini__link">See the research →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIX HUBS -->
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">The platform</span>
+        <h2>Six places to get stronger.</h2>
+        <p class="lede">Not sure where to begin? Start Here diagnoses your real bottleneck and routes you to the right ones, in order.</p>
+      </div>
+      <div class="grid grid--3" style="margin-top:2rem">
+        <a class="hub-card" href="start.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+          </span>
+          <h3>Start Here</h3>
+          <p>Tell us where you are. We'll build your path — no firehose of articles.</p>
+          <span class="hub-card__go">Begin →</span>
+        </a>
+        <a class="hub-card hub-card--dark" href="profile.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </span>
+          <h3>Profile &amp; Presence</h3>
+          <p>Make recruiters stop scrolling — your LinkedIn, taken apart and fixed.</p>
+          <span class="hub-card__go">Enter the studio →</span>
+        </a>
+        <a class="hub-card" href="resume.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          </span>
+          <h3>Resume Lab</h3>
+          <p>See weak vs. excellent side by side, then score your own against a rubric.</p>
+          <span class="hub-card__go">Open the lab →</span>
+        </a>
+        <a class="hub-card" href="interview.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <h3>Interview Center</h3>
+          <p>Walk in ready — behavioral to executive, plus virtual setup that doesn't sabotage you.</p>
+          <span class="hub-card__go">Start prepping →</span>
+        </a>
+        <a class="hub-card" href="strategy.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+          </span>
+          <h3>Job Search Strategy</h3>
+          <p>The funnel math, the hidden market, and a full veteran transition hub.</p>
+          <span class="hub-card__go">See the strategy →</span>
+        </a>
+        <a class="hub-card" href="truth.html" data-reveal>
+          <span class="hub-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </span>
+          <h3>Recruiter Truth</h3>
+          <p>How hiring actually works, with named sources you can click and check.</p>
+          <span class="hub-card__go">Read the truth →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP PREVIEW -->
+  <section class="section" style="background:var(--canvas)">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Your path, in order</span>
+        <h2>We diagnose first, then route.</h2>
+        <p class="lede">The failure mode of every career site is the firehose — 50 articles and no idea where to start. We figure out what's actually stopping you, then hand you the steps in the right order.</p>
+      </div>
+      <div class="stepper" data-reveal>
+        <div class="step"><div class="step__num"></div><h4>Diagnose</h4><p>Find your real bottleneck, not just the symptom.</p></div>
+        <div class="step"><div class="step__num"></div><h4>Fix your presence</h4><p>A profile recruiters can read in seconds.</p></div>
+        <div class="step"><div class="step__num"></div><h4>Sharpen your resume</h4><p>Relevance and clarity over keyword games.</p></div>
+        <div class="step"><div class="step__num"></div><h4>Prepare interviews</h4><p>Structured reps for every format.</p></div>
+        <div class="step"><div class="step__num"></div><h4>Run a smart search</h4><p>Work the funnel and the hidden market.</p></div>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem">
+        <a class="btn btn--primary btn--lg" href="start.html">Build my roadmap →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE BAND -->
+  <section class="section evidence">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">What the research actually says</span>
+        <h2>Every claim here, sourced.</h2>
+      </div>
+      <div class="evidence__grid" style="margin-top:1.5rem">
+        <div class="evi" data-reveal>
+          <h3>Where recruiters' eyes go</h3>
+          <p>Most of the initial review goes to your name, current and previous titles, employment dates, and education — not the fine print.</p>
+          <a class="chip chip--data" href="truth.html#scan">Ladders / Boston University</a>
+        </div>
+        <div class="evi" data-reveal>
+          <h3>What wins the scan</h3>
+          <p>Simple layouts with clear sections, headings, bold titles and bulleted accomplishments win. Clutter and multiple columns lose.</p>
+          <a class="chip chip--data" href="resume.html">Ladders eye-tracking, 2018</a>
+        </div>
+        <div class="evi" data-reveal>
+          <h3>The real bottleneck</h3>
+          <p>ATS tools organize applications; they don't eliminate them. Human recruiters, overwhelmed by volume, make the decisions.</p>
+          <a class="chip chip--data" href="truth.html#ats">Enhancv, 2025</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:.8rem"><span class="brand__mark">CL</span>Career Launch Academy</a>
+        <p class="footer__mission">Free and always will be. We don't sell templates, coaching, or your data — so the advice has no reason to lie to you.</p>
+      </div>
+      <div>
+        <h4>Hubs</h4>
+        <a href="start.html">Start Here</a>
+        <a href="profile.html">Profile &amp; Presence</a>
+        <a href="resume.html">Resume Lab</a>
+        <a href="interview.html">Interview Center</a>
+        <a href="strategy.html">Job Search Strategy</a>
+        <a href="truth.html">Recruiter Truth</a>
+      </div>
+      <div>
+        <h4>Sources</h4>
+        <div data-sources></div>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span data-year></span> Career Launch Academy. Independent &amp; non-commercial.</span>
+      <span>Content last reviewed: <span data-reviewed></span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
