@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resume Lab | Career Launch Academy</title>
-<meta name="description" content="The ATS truth, a length-decision tool, section-by-section teaching, a 10-persona example library (poor / average / excellent), and a client-side resume scorer.">
+<title>Resume Lab — See Weak vs. Excellent, Then Score Your Own | Career Launch Academy</title>
+<meta name="description" content="The ATS truth, a length-decision guide, general vs. targeted resumes, a 10-persona example library (poor / average / excellent with recruiter commentary), and a private client-side resume scorer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .stub-hero { background:linear-gradient(180deg,#fff,var(--canvas)); color:var(--ink); padding-block: clamp(3rem,7vw,5rem); }
-  .stub-hero h1 { font-size: var(--fs-h1); color:var(--ink); max-width:20ch; }
-  .stub-hero .lede { color:var(--ink-muted); }
-  .stub-badge { display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.3rem .8rem; border-radius:100px; margin-bottom:1rem; background:#EAF1FA; color:var(--primary-dark); }
-</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
   <div class="nav__inner">
     <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
@@ -32,25 +27,147 @@
     </nav>
   </div>
 </header>
+
 <main id="main">
-  <section class="stub-hero">
+
+  <section class="lab-hero">
     <div class="wrap" data-reveal>
-      <span class="stub-badge">In progress — content drafted, building next</span>
       <span class="eyebrow">Resume Lab</span>
       <h1>See weak vs. excellent — then score your own.</h1>
-      <p class="lede">The ATS truth, a length-decision tool, section-by-section teaching, a 10-persona example library (poor / average / excellent), and a client-side resume scorer.</p>
-      <div class="pill-row" style="margin-top:1.6rem">
-        <a class="btn btn--primary btn--lg" href="start.html">Build my roadmap →</a>
-        <a class="btn btn--ghost btn--lg" href="truth.html">Read Recruiter Truth</a>
+      <p class="lede">No keyword-stuffing tricks for an imaginary robot. This is what makes a <em>skimming human</em> stop and say "interview." Learn it by contrast, then run your own resume through the scorer — privately, in your browser.</p>
+      <nav class="lab-tabs" aria-label="On this page" style="margin-top:1.5rem">
+        <a href="#ats">The ATS truth</a>
+        <a href="#length">How long?</a>
+        <a href="#targeting">General vs. targeted</a>
+        <a href="#library">Example library</a>
+        <a href="#scorer">Score your resume</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ATS TRUTH -->
+  <section class="section section--tight" id="ats">
+    <div class="wrap" style="max-width:820px">
+      <div class="myth" data-reveal>
+        <div class="myth__claim">
+          <span class="myth__x">✕</span>
+          <strong>"Optimize for the ATS or your resume never gets seen."</strong>
+        </div>
+        <div class="myth__body">
+          <p>The fear that drives most resume advice is mostly false. Recruiters overwhelmingly say their systems don't auto-reject — they organize applications for humans to review. The real bottleneck is volume and weak relevance, not a robot deleting your file.</p>
+          <div class="myth__truth">
+            <strong>So optimize for the human:</strong> clean formatting clears the low bar of being readable; everything past that is a person judging relevance and impact. That's where the Lab points your effort. <a class="chip chip--data" href="truth.html#ats">The full evidence →</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section">
-    <div class="wrap" style="max-width:760px" data-reveal>
-      <div class="note">This hub's full content is written and ready — it's next in the build queue. The complete platform leads with the three credibility-defining pages (Home, Start Here, and Recruiter Truth), then layers in this hub. Use the roadmap builder to get your ordered plan in the meantime.</div>
+
+  <!-- LENGTH -->
+  <section class="section" id="length" style="background:var(--canvas)">
+    <div class="wrap" style="max-width:900px">
+      <div data-reveal>
+        <span class="eyebrow">Stop agonizing over page count</span>
+        <h2>How long should your resume be?</h2>
+        <p class="lede">There's no universal rule — there's a rule per situation. Match yours to the closest case.</p>
+      </div>
+      <div class="length-tool" data-reveal>
+        <div class="length-grid">
+          <div class="length-card">
+            <div class="who">Most people</div>
+            <h4>One page</h4>
+            <p>Early career, under ~10 years of relevant experience, or any role where focus matters. If you're agonizing, it's almost certainly one page.</p>
+          </div>
+          <div class="length-card">
+            <div class="who">Experienced</div>
+            <h4>Two pages</h4>
+            <p>10+ years with a deep, relevant track record. Use the second page only if every line earns its place — not to pad.</p>
+          </div>
+          <div class="length-card">
+            <div class="who">Specialized</div>
+            <h4>Three+ pages</h4>
+            <p>Academic CVs, federal (USAJobs) resumes, or senior technical roles with publications, patents, or clearances. Here, length is expected.</p>
+          </div>
+        </div>
+        <p class="note" style="margin-top:1rem">The federal resume is the big exception — it's <em>meant</em> to be long and detailed. More on that in <a href="strategy.html">Job Search Strategy</a>.</p>
+      </div>
     </div>
   </section>
+
+  <!-- TARGETING -->
+  <section class="section" id="targeting">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">The single biggest lever on response rate</span>
+        <h2>General vs. targeted.</h2>
+        <p class="lede">Relevance beats volume — the research is consistent on this. Here's the honest trade-off.</p>
+        <div class="contrast">
+          <div class="contrast__col contrast__col--weak">
+            <span class="contrast__label">General resume</span>
+            <p><b>Saves time</b>, lets you apply widely fast.</p>
+            <p>But it converts poorly — it rarely matches any one role closely, so it reads as generic to the human reviewing it.</p>
+            <em>Best for: high-volume speculative applications, or a baseline to tailor from.</em>
+          </div>
+          <div class="contrast__col contrast__col--strong">
+            <span class="contrast__label">Targeted resume</span>
+            <p><b>Wins interviews</b> — it mirrors the role's language and surfaces the most relevant experience first.</p>
+            <p>Costs more effort per application, so reserve it for roles you actually want.</p>
+            <em>Best for: every job you genuinely care about landing.</em>
+          </div>
+        </div>
+        <p class="note">The move most people miss: keep one strong general version for volume, and tailor hard for the short list you really want. Don't add to the volume problem with 200 generic applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLE LIBRARY -->
+  <section class="section" id="library" style="background:var(--canvas)">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Learn by contrast</span>
+        <h2>The example library.</h2>
+        <p class="lede">Ten roles, three versions each — poor, average, excellent — with the reason each works and a recruiter's honest take. Pick a role.</p>
+      </div>
+      <div data-reveal style="margin-top:1.5rem">
+        <div class="persona-tabs" id="persona-tabs" role="tablist" aria-label="Resume examples by role"></div>
+        <div id="persona-panel"></div>
+      </div>
+      <p class="note" style="margin-top:1.25rem">Bullets are teaching samples. Notice the pattern across all ten: <b>poor</b> lists duties, <b>average</b> adds specifics but no outcome, <b>excellent</b> adds numbers, scope, and results. That's the whole game.</p>
+    </div>
+  </section>
+
+  <!-- SCORER -->
+  <section class="section" id="scorer">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">Your turn</span>
+        <h2>Score your resume.</h2>
+        <p class="lede">Paste your resume text below. The scorer checks the things that actually matter to a skimming human and hands you a fix list, worst first. <strong>Nothing is uploaded — it runs entirely in your browser.</strong></p>
+      </div>
+      <div class="scorer" data-reveal>
+        <label for="resume-input" class="muted" style="display:block;margin-bottom:.5rem;font-size:.9rem">Paste your resume text (formatting will be stripped — that's fine)</label>
+        <textarea id="resume-input" placeholder="Paste your resume here…&#10;&#10;Experience&#10;Senior Project Manager, Acme — 2021–present&#10;- Led ..."></textarea>
+        <div class="scorer__row">
+          <button class="btn btn--primary" id="score-btn">Score my resume</button>
+          <button class="btn btn--ghost" id="score-clear">Clear</button>
+          <span class="scorer__privacy">Runs locally — nothing leaves this page</span>
+        </div>
+        <div id="score-output" hidden style="margin-top:1.25rem"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--ink); color:#fff">
+    <div class="wrap text-center" data-reveal>
+      <h2 style="color:#fff">Resume sharpened. What's the real bottleneck?</h2>
+      <p class="lede mx-auto" style="color:#c5ccd2">Maybe it's the resume — maybe it's visibility or interviews. Start Here tells you where to spend your energy.</p>
+      <a class="btn btn--primary btn--lg" href="start.html" style="margin-top:1rem">Build my roadmap →</a>
+    </div>
+  </section>
+
 </main>
+
 <footer class="footer">
   <div class="wrap">
     <div class="footer__grid">
@@ -78,6 +195,8 @@
     </div>
   </div>
 </footer>
+
 <script src="app.js"></script>
+<script src="resume.js"></script>
 </body>
 </html>

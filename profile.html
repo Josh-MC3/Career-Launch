@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profile & Presence | Career Launch Academy</title>
-<meta name="description" content="An interactive, LinkedIn-inspired teardown of every profile section — photo, banner, headline, About, experience, skills, and more — rendered in a focused charcoal-and-scarlet workspace.">
+<title>Profile &amp; Presence — The Dark Studio | Career Launch Academy</title>
+<meta name="description" content="An interactive, LinkedIn-inspired teardown of every profile section — photo, banner, headline, About, experience, skills, certifications, featured — with recruiter psychology and live examples, in a focused charcoal-and-scarlet workspace.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .stub-hero { background:linear-gradient(135deg,#232327,#1A1A1D); color:#F5F5F5; padding-block: clamp(3rem,7vw,5rem); }
-  .stub-hero h1 { font-size: var(--fs-h1); color:#F5F5F5; max-width:20ch; }
-  .stub-hero .lede { color:#A8A8AD; }
-  .stub-badge { display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.3rem .8rem; border-radius:100px; margin-bottom:1rem; background:rgba(215,38,56,.16); color:#ff7a6b; }
-</style>
 </head>
-<body>
+<body class="studio">
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
   <div class="nav__inner">
     <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
@@ -32,25 +27,294 @@
     </nav>
   </div>
 </header>
+
 <main id="main">
-  <section class="stub-hero">
-    <div class="wrap" data-reveal>
-      <span class="stub-badge">In progress — content drafted, building next</span>
-      <span class="eyebrow eyebrow--scarlet">Profile & Presence — the dark studio</span>
-      <h1>Make recruiters stop scrolling.</h1>
-      <p class="lede">An interactive, LinkedIn-inspired teardown of every profile section — photo, banner, headline, About, experience, skills, and more — rendered in a focused charcoal-and-scarlet workspace.</p>
+
+  <section class="studio-hero">
+    <div class="wrap studio-hero__inner" data-reveal>
+      <span class="studio-kicker">Profile &amp; Presence — the studio</span>
+      <h1>Make recruiters <span class="scar">stop scrolling</span>.</h1>
+      <p class="lede">Your profile is doing one of two things right now: working for you while you sleep, or quietly costing you opportunities. This is the teardown — section by section — of what actually makes a recruiter pause. The gold markers show where their eyes land.</p>
       <div class="pill-row" style="margin-top:1.6rem">
-        <a class="btn btn--scarlet btn--lg" href="start.html">Build my roadmap →</a>
-        <a class="btn btn--ghost btn--lg" href="truth.html">Read Recruiter Truth</a>
+        <a class="btn btn--scarlet btn--lg" href="#teardown">Start the teardown ↓</a>
+        <a class="btn btn--ghost btn--lg" href="truth.html" style="color:#fff;border-color:#44444C">Read Recruiter Truth</a>
       </div>
     </div>
   </section>
-  <section class="section">
-    <div class="wrap" style="max-width:760px" data-reveal>
-      <div class="note">This hub's full content is written and ready — it's next in the build queue. The complete platform leads with the three credibility-defining pages (Home, Start Here, and Recruiter Truth), then layers in this hub. Use the roadmap builder to get your ordered plan in the meantime.</div>
+
+  <section class="section" id="teardown">
+    <div class="wrap">
+      <div data-reveal style="max-width:720px;margin:0 auto 2rem">
+        <span class="eyebrow">The specimen</span>
+        <h2>One profile, taken apart.</h2>
+        <p class="lede">This is a profile-style layout — the conventions you know, rebuilt as a teaching tool. The gold <span style="color:var(--gold);font-weight:700">EYES HERE</span> markers show the spots recruiters look at first. Each section is unpacked below.</p>
+      </div>
+
+      <div class="profile-doc" data-reveal>
+        <div class="pf-banner">
+          <span class="pf-banner__tag">Banner: a billboard most people leave blank</span>
+        </div>
+        <div class="pf-photo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </div>
+        <div class="pf-body">
+          <div class="pf-name">Jordan Avery</div>
+          <div class="pf-headline" id="mock-headline">Project Manager · Delivering complex programs on time &amp; under budget · PMP</div>
+          <div class="pf-meta">San Diego, CA · 500+ connections</div>
+          <span class="pf-open">Open to work — Program / Project Management roles</span>
+        </div>
+
+        <div class="pf-section">
+          <span class="eye"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>Eyes here</span>
+          <h3>About</h3>
+          <p>I help organizations ship complex programs without the chaos. Over 8 years I've led cross-functional teams of up to 30, turned around two at-risk launches, and cut average delivery time 18% by fixing how work enters the pipeline. PMP-certified, happiest where strategy meets execution.</p>
+        </div>
+
+        <div class="pf-section">
+          <span class="eye"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>Eyes here</span>
+          <h3>Experience</h3>
+          <p style="margin-bottom:.2rem"><b style="color:#fff">Senior Project Manager</b> · Meridian Logistics · 2021–present</p>
+          <p style="font-size:.92rem;color:#a9a9b0">Led 6 cross-functional programs worth $3M combined; cut delivery time 18% by restructuring intake.</p>
+        </div>
+
+        <div class="pf-section">
+          <h3>Skills</h3>
+          <div class="pf-tag-row">
+            <span class="pf-tag">Project Management</span>
+            <span class="pf-tag">Agile / Scrum</span>
+            <span class="pf-tag">Stakeholder Management</span>
+            <span class="pf-tag">Risk Management</span>
+            <span class="pf-tag">Budgeting</span>
+          </div>
+        </div>
+
+        <div class="pf-section">
+          <h3>Featured</h3>
+          <div class="pf-tag-row">
+            <span class="pf-tag">📊 Program turnaround case study</span>
+            <span class="pf-tag">✍️ "How we cut delivery time" article</span>
+          </div>
+        </div>
+      </div>
+      <p class="muted text-center" style="margin-top:1rem;font-size:.86rem">A teaching mock — not a real person, and not affiliated with LinkedIn.</p>
     </div>
   </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">First impression, before a single word</span>
+        <h2>Photo &amp; banner.</h2>
+      </div>
+      <div class="teach-grid">
+        <div class="teach-card" data-reveal>
+          <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>Profile photo</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Do</span> A clear, recent headshot; face fills most of the frame; simple background; dress one notch above the target role.</li>
+            <li><span class="mk mk--bad">Don't</span> Cropped group photos, sunglasses, party shots, low resolution — or no photo at all.</li>
+          </ul>
+          <div class="teach-think"><b>What recruiters think:</b> the photo sets an instant, unconscious read on professionalism before they read one word. No photo reads as incomplete or abandoned.</div>
+        </div>
+        <div class="teach-card" data-reveal>
+          <h4><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 15l5-4 4 3 5-5 4 4"/></svg></span>Banner</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Do</span> Reinforce your identity — a clean branded graphic, your specialty in text, or an industry-relevant image.</li>
+            <li><span class="mk mk--bad">Don't</span> Leave the default blank (a wasted billboard), or stretch a low-res stock image.</li>
+          </ul>
+          <div class="teach-think"><b>By industry:</b> a developer's subtle architecture motif; a PM's "I ship products" line; an exec's sleek brand design; a veteran's bridge from service to target field.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal style="max-width:720px">
+        <span class="eyebrow">The most-seen line you own</span>
+        <h2>Headline.</h2>
+        <p class="lede">Your headline shows up in search results, in comments, on every connection request. A headline that's just "Job Title at Company" wastes the most valuable real estate on your profile. Pick a role below — the weak and strong versions update, and so does the mock profile up top.</p>
+      </div>
+
+      <div class="swapper" id="headline-swapper" data-reveal>
+        <div class="swapper__tabs" role="tablist" aria-label="Headline examples by role"></div>
+        <div class="swap-body">
+          <div class="swap-line swap-line--weak">
+            <span class="swap-line__label">✕ Weak — just a title</span>
+            <span class="swap-line__text" data-weak></span>
+          </div>
+          <div class="swap-line swap-line--strong">
+            <span class="swap-line__label">✓ Strong — role + value + keywords</span>
+            <span class="swap-line__text" data-strong></span>
+          </div>
+        </div>
+        <div class="teach-think" style="margin-top:1.2rem"><b>The psychology:</b> recruiters search by keywords and skim headlines to decide who's worth a click. State what you do and the value you bring, loaded with the terms they actually search.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Prime keyword and story space</span>
+        <h2>About.</h2>
+      </div>
+      <div class="teach-grid">
+        <div class="teach-card" data-reveal>
+          <h4>Write it like a human</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Do</span> Open with a hook, not "I am a results-driven professional." Tell the arc: who you are, what you're great at, what you're after.</li>
+            <li><span class="mk mk--good">Do</span> Write in first person. It reads as a person, not a press release.</li>
+            <li><span class="mk mk--bad">Don't</span> Leave it blank — it's prime keyword and credibility space.</li>
+          </ul>
+        </div>
+        <div class="teach-card" data-reveal>
+          <h4>Make it findable &amp; credible</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Keywords</span> LinkedIn is a search engine for recruiters. Work your core skills and target titles in naturally.</li>
+            <li><span class="mk mk--good">Proof</span> Anchor claims with specifics and numbers, not adjectives — "cut delivery time 18%" beats "highly efficient."</li>
+          </ul>
+          <div class="teach-think"><b>Compare:</b> "Experienced professional seeking opportunities" says nothing. The mock profile's About names a specialty, two turnarounds, and a measurable result — that's what earns the longer read.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal style="max-width:720px">
+        <span class="eyebrow">Duties vs. accomplishments</span>
+        <h2>Experience.</h2>
+        <p class="lede">This is the single highest-leverage edit most people can make. Flip the switch.</p>
+      </div>
+      <div class="toggle-demo" id="xp-toggle" data-reveal>
+        <div class="toggle-switch" role="tablist" aria-label="Experience phrasing">
+          <button data-which="weak" aria-selected="true">Weak version</button>
+          <button data-which="strong" aria-selected="false">Strong version</button>
+        </div>
+        <div class="toggle-content">
+          <div class="xp xp--weak" data-xp-weak>
+            <b>Senior Project Manager</b><br>
+            "Responsible for managing projects and coordinating with stakeholders. Oversaw project timelines and ensured deliverables were met."
+          </div>
+          <div class="xp xp--strong" data-xp-strong hidden>
+            <b>Senior Project Manager</b><br>
+            "Led 6 cross-functional projects worth $3M; cut average delivery time 18% by restructuring the intake process; turned around two at-risk launches that shipped on schedule."
+          </div>
+        </div>
+        <p class="toggle-note">Duties tell people what you were <em>supposed</em> to do. Accomplishments prove what you <em>actually achieved</em> — and that's what a recruiter skims for. Numbers, scope, and outcomes do the work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">The rest of the profile, fast</span>
+        <h2>Skills, recommendations, certifications, featured.</h2>
+      </div>
+      <div class="teach-grid">
+        <div class="teach-card" data-reveal>
+          <h4>Skills</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Findability</span> Recruiters search and filter by skill keywords — the right skills make you appear at all.</li>
+            <li><span class="mk mk--good">Mirror</span> Use the exact terms from your target postings ("Project Management," "Agile").</li>
+            <li><span class="mk mk--good">Prioritize</span> Your top pinned skills carry the most weight. Lead with the ones central to the roles you want.</li>
+          </ul>
+        </div>
+        <div class="teach-card" data-reveal>
+          <h4>Recommendations</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Who</span> Managers, peers, and clients who can speak to specific impact. Specificity beats seniority.</li>
+            <li><span class="mk mk--good">How many</span> A handful of strong, specific ones beats a wall of generic praise.</li>
+            <li><span class="mk mk--good">Make it easy</span> Offer a starting draft and remind them of a shared project.</li>
+          </ul>
+        </div>
+        <div class="teach-card" data-reveal>
+          <h4>Certifications</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Show</span> Role-relevant credentials: PMP, Six Sigma, Agile/Scrum (CSM), Security+, and field-specific certs.</li>
+            <li><span class="mk mk--good">Why</span> They're searchable keywords <em>and</em> credibility signals — for some roles, a hard filter you'd otherwise miss.</li>
+          </ul>
+        </div>
+        <div class="teach-card" data-reveal>
+          <h4>Featured</h4>
+          <ul class="teach-list">
+            <li><span class="mk mk--good">Use it</span> Your portfolio in the spotlight: case studies, articles you've written, projects with outcomes, talks.</li>
+            <li><span class="mk mk--good">Why</span> It turns claims into evidence right where a curious recruiter clicks next.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">What you can actually control</span>
+        <h2>The algorithm &amp; your visibility.</h2>
+        <p class="lede">LinkedIn doesn't publish its exact ranking formula — so here's the honest split between what's well-established and what's just commonly repeated.</p>
+        <div class="teach-grid" style="margin-top:1.5rem">
+          <div class="teach-card">
+            <h4>Well-established</h4>
+            <ul class="teach-list">
+              <li><span class="mk mk--good">✓</span> <span><b style="color:#fff">Completeness.</b> Complete profiles surface far more often in search.</span></li>
+              <li><span class="mk mk--good">✓</span> <span><b style="color:#fff">Keyword relevance.</b> The platform matches recruiter searches to your headline, About, skills, and experience text.</span></li>
+              <li><span class="mk mk--good">✓</span> <span><b style="color:#fff">Activity.</b> Active profiles get shown more than dormant ones.</span></li>
+            </ul>
+          </div>
+          <div class="teach-card">
+            <h4>Commonly claimed, less certain</h4>
+            <ul class="teach-list">
+              <li><span class="mk" style="color:var(--gold)">~</span> Exact "best time to post" rules and precise engagement weightings vary and aren't confirmed.</li>
+              <li><span class="mk" style="color:var(--gold)">~</span> We flag these as plausible-but-unverified rather than dress them up as fact.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="teach-think" style="margin-top:1.2rem"><b>Engagement, without becoming an influencer:</b> comment thoughtfully in your field, share the occasional relevant post, keep the profile active enough to signal you're present. The goal is visibility to recruiters, not an audience.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:820px">
+      <div class="teach-card" data-reveal style="border-left:3px solid var(--gold)">
+        <h4><span class="ic" style="background:rgba(201,162,39,.12);color:var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>What recruiters actually look at first</h4>
+        <p style="color:#c9c9d0">When recruiters review profiles and resumes, the bulk of their initial attention lands on a few elements — your name, current and previous titles, employment dates, and education — and they follow a consistent visual path, which is exactly why an organized layout that puts the right information where they expect it drives a faster yes.</p>
+        <div class="pill-row">
+          <a class="chip chip--data" href="https://www.bu.edu/com/files/2018/10/TheLadders-EyeTracking-StudyC2.pdf" target="_blank" rel="noopener">Boston University / Ladders</a>
+          <a class="chip chip--data" href="https://www.hrdive.com/news/eye-tracking-study-shows-recruiters-look-at-resumes-for-7-seconds/541582/" target="_blank" rel="noopener">Ladders eye-tracking</a>
+        </div>
+        <div class="teach-think" style="margin-top:1rem"><b>The takeaway:</b> your headline, current title, and the top of your experience do the heavy lifting. Make every one of them count — and dig into the full evidence in <a href="truth.html#scan" style="color:var(--scarlet)">Recruiter Truth</a>.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">The whole picture, not just one page</span>
+        <h2>Personal branding.</h2>
+        <p class="lede">Your profile is one piece. Your <em>presence</em> is everything a recruiter assembles when they search your name.</p>
+        <ul class="teach-list" style="margin-top:1rem">
+          <li><span class="mk mk--good">Presence</span> <span>Know what shows up when someone searches you — and make it intentional. Clean up or lock down anything that contradicts your professional story.</span></li>
+          <li><span class="mk mk--good">Alignment</span> <span>Your public footprint should be consistent with how you present professionally. Alignment matters more than perfection.</span></li>
+          <li><span class="mk mk--good">Thought leadership</span> <span>If you want the edge: sharing genuine expertise compounds over time into being <em>known</em> for something — the strongest position any candidate can hold.</span></li>
+        </ul>
+        <div class="teach-think" style="margin-top:1.2rem"><b>The honest bar:</b> you don't need to become an influencer. A profile that's complete, specific, keyword-aware, and active already puts you ahead of most of the field.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section studio-cta">
+    <div class="wrap" data-reveal>
+      <h2>Profile fixed. What's next?</h2>
+      <p class="lede mx-auto">Start Here turns this into an ordered plan — and tells you whether your profile, your resume, or your search is the real bottleneck.</p>
+      <a class="btn btn--scarlet btn--lg" href="start.html" style="margin-top:1rem">Build my roadmap →</a>
+    </div>
+  </section>
+
 </main>
+
 <footer class="footer">
   <div class="wrap">
     <div class="footer__grid">
@@ -78,6 +342,8 @@
     </div>
   </div>
 </footer>
+
 <script src="app.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>
