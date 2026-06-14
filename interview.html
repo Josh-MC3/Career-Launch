@@ -3,21 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interview Center | Career Launch Academy</title>
-<meta name="description" content="A STAR-method trainer, five interview tracks (behavioral, leadership, technical, executive, virtual), a virtual-setup guide, and a filterable question bank.">
+<title>Interview Center — STAR Trainer, Five Tracks &amp; a Question Bank | Career Launch Academy</title>
+<meta name="description" content="An interactive STAR-method trainer that saves your drafts, five interview tracks (behavioral, leadership, technical, executive, virtual), a virtual-setup guide, and a filterable question bank with the subtext behind each question.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .stub-hero { background:linear-gradient(180deg,#fff,var(--canvas)); color:var(--ink); padding-block: clamp(3rem,7vw,5rem); }
-  .stub-hero h1 { font-size: var(--fs-h1); color:var(--ink); max-width:20ch; }
-  .stub-hero .lede { color:var(--ink-muted); }
-  .stub-badge { display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:.3rem .8rem; border-radius:100px; margin-bottom:1rem; background:#EAF1FA; color:var(--primary-dark); }
-</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
 <header class="nav">
   <div class="nav__inner">
     <a class="brand" href="index.html"><span class="brand__mark">CL</span>Career Launch Academy</a>
@@ -32,25 +27,161 @@
     </nav>
   </div>
 </header>
+
 <main id="main">
-  <section class="stub-hero">
+
+  <section class="center-hero">
     <div class="wrap" data-reveal>
-      <span class="stub-badge">In progress — content drafted, building next</span>
       <span class="eyebrow">Interview Center</span>
       <h1>Walk in ready.</h1>
-      <p class="lede">A STAR-method trainer, five interview tracks (behavioral, leadership, technical, executive, virtual), a virtual-setup guide, and a filterable question bank.</p>
-      <div class="pill-row" style="margin-top:1.6rem">
-        <a class="btn btn--primary btn--lg" href="start.html">Build my roadmap →</a>
-        <a class="btn btn--ghost btn--lg" href="truth.html">Read Recruiter Truth</a>
+      <p class="lede">Interviews reward preparation more than talent. Most people wing it, then wonder why they lost to someone less qualified. Learn the structure, drill it, and know what each question is really testing.</p>
+      <nav class="lab-tabs" aria-label="On this page" style="margin-top:1.5rem">
+        <a href="#star">STAR trainer</a>
+        <a href="#tracks">The five tracks</a>
+        <a href="#virtual">Virtual setup</a>
+        <a href="#bank">Question bank</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- STAR TRAINER -->
+  <section class="section section--tight" id="star">
+    <div class="wrap" style="max-width:820px">
+      <div data-reveal>
+        <span class="eyebrow">The backbone of behavioral interviews</span>
+        <h2>The STAR method, drilled.</h2>
+        <p class="lede">Situation, Task, Action, Result — the structure that turns "tell me about a time…" from a panic into a story. Pick a competency, study the model answer, then draft your own. Your drafts save in this browser.</p>
+      </div>
+      <div class="star" id="star-trainer" data-reveal>
+        <div class="star__tabs" role="tablist" aria-label="STAR competencies"></div>
+        <div class="star-prompt" data-star-prompt></div>
+        <div class="star-grid" data-star-grid></div>
+        <div class="star-scaffold">
+          <h4>Now draft your own</h4>
+          <p class="muted">Write a version from your real experience. It saves automatically — come back anytime.</p>
+          <div data-star-fields></div>
+          <span class="star-save-note">Saved in this browser — nothing is uploaded</span>
+        </div>
+      </div>
+      <p class="note" style="margin-top:1.25rem">Prep one strong story for each competency and you'll cover the large majority of behavioral questions. The weak answer is all situation and no result; the strong one is balanced, specific, and centered on what <em>you</em> did.</p>
+    </div>
+  </section>
+
+  <!-- FIVE TRACKS -->
+  <section class="section" id="tracks" style="background:var(--canvas)">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Different rooms, different rules</span>
+        <h2>The five interview tracks.</h2>
+        <p class="lede">Each format is assessing something different. Know what's really being measured, and you can aim your answers.</p>
+      </div>
+      <div class="track-grid" style="margin-top:1.5rem">
+        <div class="track" data-reveal>
+          <div class="track__head">
+            <span class="track__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg></span>
+            <h3>Behavioral</h3>
+          </div>
+          <div class="track__assess">Assessing: how you behaved before, as a predictor</div>
+          <p>Questions start "Tell me about a time…" Answer in STAR. The trap is rambling; the fix is structure.</p>
+          <div class="track__eg"><b>Aim for:</b> one balanced story with a measurable result — not a narration of the whole situation.</div>
+        </div>
+        <div class="track" data-reveal>
+          <div class="track__head">
+            <span class="track__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+            <h3>Leadership</h3>
+          </div>
+          <div class="track__assess">Assessing: getting results through other people</div>
+          <p>Expect "How do you handle an underperformer?" or "Describe leading through change."</p>
+          <div class="track__eg"><b>Aim for:</b> shift the language from "I did" to "I enabled the team to." Leadership is multiplying, not doing.</div>
+        </div>
+        <div class="track" data-reveal>
+          <div class="track__head">
+            <span class="track__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 18l-6-6 6-6M16 6l6 6-6 6"/></svg></span>
+            <h3>Technical</h3>
+          </div>
+          <div class="track__assess">Assessing: can you do the work — and reason out loud</div>
+          <p>The meta-skill is narrating your thinking, not producing a silent perfect answer.</p>
+          <div class="track__eg"><b>Aim for:</b> "I'd start with X because it's simplest; if it doesn't scale, I'd move to Y." The reasoning is the signal.</div>
+        </div>
+        <div class="track" data-reveal>
+          <div class="track__head">
+            <span class="track__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span>
+            <h3>Executive</h3>
+          </div>
+          <div class="track__assess">Assessing: judgment, vision, business thinking</div>
+          <p>Questions zoom out: "What would you change in your first 90 days?" "How do you decide with incomplete information?"</p>
+          <div class="track__eg"><b>Aim for:</b> answer at the level of strategy and trade-offs, tying everything back to business outcomes.</div>
+        </div>
+        <div class="track" data-reveal style="grid-column:1/-1">
+          <div class="track__head">
+            <span class="track__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>
+            <h3>Virtual</h3>
+          </div>
+          <div class="track__assess">Assessing: the same as the format it stands in for — but your setup can quietly sabotage you</div>
+          <p>Everything above still applies. The difference is logistics: camera, lighting, microphone, and background either help you or get in the way. The full setup checklist is below.</p>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section">
-    <div class="wrap" style="max-width:760px" data-reveal>
-      <div class="note">This hub's full content is written and ready — it's next in the build queue. The complete platform leads with the three credibility-defining pages (Home, Start Here, and Recruiter Truth), then layers in this hub. Use the roadmap builder to get your ordered plan in the meantime.</div>
+
+  <!-- VIRTUAL SETUP -->
+  <section class="section" id="virtual">
+    <div class="wrap" style="max-width:900px">
+      <div data-reveal>
+        <span class="eyebrow">Don't let the tech cost you the room</span>
+        <h2>Virtual setup, handled.</h2>
+        <p class="lede">None of this requires fancy gear. It requires ten minutes before the call.</p>
+      </div>
+      <div class="vsetup" style="margin-top:1.5rem">
+        <div class="vsetup__item" data-reveal>
+          <span class="vsetup__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+          <div><h4>Camera</h4><p>At eye level — stack books under the laptop. Look at the lens, not your own face, when you make your key points.</p></div>
+        </div>
+        <div class="vsetup__item" data-reveal>
+          <span class="vsetup__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></span>
+          <div><h4>Lighting</h4><p>A window or lamp <em>in front</em> of you, never behind. Backlight turns you into a silhouette.</p></div>
+        </div>
+        <div class="vsetup__item" data-reveal>
+          <span class="vsetup__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10a7 7 0 0 1-14 0M12 19v4"/></svg></span>
+          <div><h4>Microphone</h4><p>Earbuds with a mic beat laptop audio every time. Test it once before the call so you're not the person who sounds far away.</p></div>
+        </div>
+        <div class="vsetup__item" data-reveal>
+          <span class="vsetup__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <div><h4>Background</h4><p>Tidy and neutral beats a busy room or an obviously fake blur. If you use a virtual background, check it doesn't clip your head when you move.</p></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top:1.25rem"><b>The dry run:</b> join your own meeting link 10 minutes early, check all four, then close every other app and silence notifications.</p>
     </div>
   </section>
+
+  <!-- QUESTION BANK -->
+  <section class="section" id="bank" style="background:var(--canvas)">
+    <div class="wrap" style="max-width:900px">
+      <div data-reveal>
+        <span class="eyebrow">Practice with the subtext</span>
+        <h2>The question bank.</h2>
+        <p class="lede">Common questions, filtered by role and format — each paired with what the interviewer is really asking. Read the subtext and your answers get sharper.</p>
+      </div>
+      <div data-reveal style="margin-top:1.5rem">
+        <div class="qbank__filters" id="qbank-filters" role="tablist" aria-label="Filter questions by category"></div>
+        <div class="qbank__count" id="qbank-count"></div>
+        <div class="qbank__list" id="qbank-list"></div>
+      </div>
+      <p class="note" style="margin-top:1.25rem">We don't pad this to hit a round number. A dozen questions you can answer cold beats a hundred you skim — pair each with a STAR story above.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--ink); color:#fff">
+    <div class="wrap text-center" data-reveal>
+      <h2 style="color:#fff">Interview-ready. What's the bigger picture?</h2>
+      <p class="lede mx-auto" style="color:#c5ccd2">If you're getting interviews but not offers, you're in the right place. If you're not getting interviews at all, the bottleneck is upstream — Start Here will tell you where.</p>
+      <a class="btn btn--primary btn--lg" href="start.html" style="margin-top:1rem">Build my roadmap →</a>
+    </div>
+  </section>
+
 </main>
+
 <footer class="footer">
   <div class="wrap">
     <div class="footer__grid">
@@ -78,6 +209,8 @@
     </div>
   </div>
 </footer>
+
 <script src="app.js"></script>
+<script src="interview.js"></script>
 </body>
 </html>
