@@ -664,3 +664,31 @@ a.chip:hover { text-decoration: none; filter: brightness(.97); }
 .matters-list li { display:flex; gap:.8rem; padding:1rem 0; border-bottom:1px solid var(--border); }
 .matters-list li:last-child { border-bottom:none; }
 .matters-list .tick { flex:0 0 auto; width:26px; height:26px; border-radius:50%; background:var(--success-bg); color:var(--success); display:grid; place-items:center; font-weight:700; margin-top:2px; }
+
+/* ============================================================
+   RESOURCE DIRECTORY (Truth & Resources hub)
+   ============================================================ */
+.res-toggle { display:inline-flex; background:#fff; border:1px solid var(--border); border-radius:100px; padding:.25rem; margin-bottom:1.5rem; }
+.res-toggle button {
+  font-family:inherit; font-size:.9rem; font-weight:600; border:none; background:none; cursor:pointer;
+  color:var(--ink-muted); padding:.5rem 1.2rem; border-radius:100px; transition:all .15s;
+}
+.res-toggle button[aria-selected="true"] { background:var(--primary); color:#fff; }
+
+.res-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+@media (max-width:760px){ .res-grid { grid-template-columns:1fr; } }
+.res-card { background:#fff; border:1px solid var(--border); border-radius:var(--radius); padding:1.2rem 1.3rem; box-shadow:var(--shadow-sm); }
+.res-card__head { display:flex; align-items:baseline; justify-content:space-between; gap:.6rem; margin-bottom:.5rem; }
+.res-card__name { font-size:1.05rem; font-weight:700; color:var(--ink); }
+.res-card__cost { font-size:.8rem; font-weight:700; white-space:nowrap; }
+.res-card__cost--free { color:var(--success); }
+.res-card__cost--paid { color:var(--warning); }
+.res-card__purpose { font-size:.92rem; color:var(--ink-muted); margin-bottom:.7rem; }
+.res-card__row { font-size:.88rem; margin-bottom:.3rem; display:flex; gap:.5rem; }
+.res-card__row .lbl { flex:0 0 auto; font-weight:700; }
+.res-card__row--pro .lbl { color:var(--success); }
+.res-card__row--con .lbl { color:var(--warning); }
+.res-card__row--use .lbl { color:var(--primary); }
+.res-verdict { font-size:.88rem; color:var(--ink); background:var(--canvas); border-left:3px solid var(--primary); border-radius:0 var(--radius-sm) var(--radius-sm) 0; padding:.6rem .8rem; margin-top:.7rem; }
+.res-verdict b { color:var(--primary-dark); }
+.res-group-label { font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-muted); margin:1.5rem 0 .8rem; }

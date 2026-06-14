@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Recruiter Truth — How Hiring Actually Works | Career Launch Academy</title>
-<meta name="description" content="The honest, sourced version of how hiring works. The 6-second scan and the 75% ATS auto-rejection myths, examined against real research — plus what actually moves the needle.">
+<title>Recruiter Truth &amp; Resources — How Hiring Works | Career Launch Academy</title>
+<meta name="description" content="The honest, sourced version of how hiring works — the 6-second scan and 75% ATS myths examined against real research, what actually moves the needle, salary negotiation, AI tools, and an honest directory of free and paid job-search resources.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -62,6 +62,7 @@
         <a href="#mistakes">Mistake libraries</a>
         <a href="#salary">Salary negotiation</a>
         <a href="#ai">AI tools</a>
+        <a href="#resources">Resource directory</a>
       </nav>
     </div>
   </section>
@@ -261,6 +262,24 @@
     </div>
   </section>
 
+  <!-- RESOURCE DIRECTORY -->
+  <section class="section" id="resources" style="background:var(--canvas)">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Where to actually look — and what to pay for</span>
+        <h2>The resource directory.</h2>
+        <p class="lede">An honest map of the tools job seekers use. The free ones with their real pros and cons; the paid ones with a straight answer on whether they're worth your money. We earn nothing from any of these.</p>
+      </div>
+      <div id="resource-directory" data-reveal style="margin-top:1.5rem">
+        <div class="res-toggle" role="tablist" aria-label="Free or paid resources">
+          <button data-res="free" aria-selected="true">Free tools</button>
+          <button data-res="paid" aria-selected="false">Paid tools</button>
+        </div>
+        <div data-res-panel></div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="section" style="background:var(--ink); color:#fff">
     <div class="wrap text-center" data-reveal>
@@ -301,5 +320,6 @@
 </footer>
 
 <script src="app.js"></script>
+<script src="resources.js"></script>
 </body>
 </html>
